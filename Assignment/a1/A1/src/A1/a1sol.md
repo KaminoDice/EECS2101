@@ -44,7 +44,7 @@ for (int i = 1; i < ints.length; i++) {
 ```
 
 If it is not equal to the previous element, then it is the right boundary of the flat subarray.
-In this case, if curLen is larger than len and satisfies the plateau condition (the $$i_{th}$$ element is strictly smaller than the $$i-1^{th}$$ element), then value is equal to the $$i-1_{th}$$ element, the `startIndex` is equal to `curIndex`, and the initial subarray length is equal to `curLen`.
+In this case, if curLen is larger than len and satisfies the plateau condition (the $i_{th}$ element is strictly smaller than the $i-1^{th}$ element), then value is equal to the $i-1_{th}$ element, the `startIndex` is equal to `curIndex`, and the initial subarray length is equal to `curLen`.
 
 Then reset `curIndex` to $$i$$, `curLen` to $1$.
 
@@ -97,7 +97,7 @@ return (boolean) this.left <= w.left && this.right >= w.right && this.bottom <= 
 
 If the overlap condition is not satisfied, then 
 
->  (a.right $\le​$ b.left) $$  \cup ​$$ (a.left $\ge​$ b.right)  $$  \cup ​$$  (a.bottom $\ge​$ b.top)  $$  \cup ​$$ (a.top $\ge​$ b.bottom)
+>  (a.right $\le​$ b.left) $  \cup ​$ (a.left $\ge​$ b.right)  $  \cup ​$  (a.bottom $\ge​$ b.top)  $  \cup ​$ (a.top $\ge​$ b.bottom)
 
 take its converse proposition (math.), we have
 
